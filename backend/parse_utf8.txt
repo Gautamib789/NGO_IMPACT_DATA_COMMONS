@@ -1,0 +1,57 @@
+﻿=== DB SUMMARY ===
+Active DB Path: E:\NGO\backend\ngo_commons.db
+Backup Path: E:\NGO\backend\ngo_commons_before_inr_migration_20260902_125025.db
+Backup Exists: True
+
+Tables:
+  - users: 19 rows, columns: ['id', 'email', 'hashed_password', 'full_name', 'role', 'is_active', 'created_at']
+  - ledger_blocks: 22 rows, columns: ['index', 'timestamp', 'event_type', 'payload_json', 'previous_hash', 'block_hash', 'nonce']
+  - ngo_details: 8 rows, columns: ['id', 'user_id', 'org_name', 'registration_number', 'tax_id', 'category', 'mission_statement', 'website', 'address', 'status', 'doc_completeness_score', 'transparency_score', 'total_expenses', 'total_donations_received', 'beneficiary_count', 'rejection_reason', 'created_at', 'updated_at']
+  - ngo_documents: 0 rows, columns: ['id', 'ngo_id', 'document_type', 'file_name', 'file_path', 'upload_date']
+  - donations: 21 rows, columns: ['id', 'donor_id', 'ngo_id', 'amount', 'currency', 'donor_name', 'message', 'transaction_hash', 'status', 'created_at']
+  - fraud_flags: 2 rows, columns: ['id', 'ngo_id', 'severity', 'rule_code', 'description', 'status', 'created_at']
+  - alembic_version: 1 rows, columns: ['version_num']
+  - otp_codes: 35 rows, columns: ['id', 'user_id', 'purpose', 'hashed_otp', 'expires_at', 'attempt_count', 'resend_count', 'used', 'created_at']
+
+Donation Currency Distribution:
+[[21, 'USD']]
+Total Donations: 21, Total Sum: 4680.0
+
+Ledger Blocks Count: 22
+Ledger Verify Status: {'valid': True, 'total_blocks': 22, 'latest_hash': 'c111ad9a0c510698d271f0698e940cb2b6afb6f163eca89d1c65f01a68e97b8c', 'status': 'Chain verified and tamper-free', 'verified_at': '02 Sep 2026, 07:20:27 AM UTC'}
+
+Recent Donations:
+   [21, 2, 1, 750.0, 'USD', 'Test Donor INR', None, '0x2d156dc6135ae586e928a3e52875ead192acfd55a74c961158f29b8e01acfd38', 'COMPLETED', '2026-09-02 06:24:59.032682']
+   [20, 2, 1, 2500.0, 'USD', 'Aarav Sharma', 'Keep up the great healthcare work!', '0xb6f67565c42ee370879eff7241da8d47be8fcc7238c51fa8a05685697a32c3d4', 'COMPLETED', '2026-09-02 05:50:18.415106']
+   [19, 5, 8, 50.0, 'USD', 'Bhavani Basaragi', '', '0x7956472938d774ebf0c45ef52e0bb360ddab16ad7f396fdb65a37525bb188690', 'COMPLETED', '2026-09-02 05:22:30.873705']
+   [18, 5, 1, 10.0, 'USD', 'Bhavani Basaragi', '', '0x77a819b40fde76c7943ddf0dcdb79e50f64da455097e3797c62882d2dabde8cd', 'COMPLETED', '2026-08-13 07:30:09.633795']
+   [17, 5, 1, 50.0, 'USD', 'Bhavani Basaragi', '', '0x204baae2cc335668ec7c5db92e0fa60739bec609a08a90d86236fe20484d3d19', 'COMPLETED', '2026-08-13 07:25:54.486757']
+
+=== CODE SEARCH SUMMARY ===
+Backend matches count: 15
+Frontend matches count: 83
+
+Backend Files with USD/Currency:
+  - backend\diag.py (1 matches)
+  - backend\search_code.py (3 matches)
+  - backend\app\models\donation.py (1 matches)
+  - backend\app\routers\donation.py (2 matches)
+  - backend\app\routers\ledger.py (4 matches)
+  - backend\app\schemas\donation.py (2 matches)
+  - backend\app\services\fraud_engine.py (2 matches)
+
+Frontend Files with USD/Currency:
+  - frontend\src\app\page.tsx (13 matches)
+  - frontend\src\app\admin\dashboard\page.tsx (9 matches)
+  - frontend\src\app\choose-role\page.tsx (1 matches)
+  - frontend\src\app\donor\dashboard\page.tsx (3 matches)
+  - frontend\src\app\explore\page.tsx (9 matches)
+  - frontend\src\app\forgot-password\page.tsx (1 matches)
+  - frontend\src\app\ledger\page.tsx (23 matches)
+  - frontend\src\app\ngo\dashboard\page.tsx (3 matches)
+  - frontend\src\app\ngo\[id]\page.tsx (9 matches)
+  - frontend\src\app\register\page.tsx (3 matches)
+  - frontend\src\app\verify-otp\page.tsx (1 matches)
+  - frontend\src\components\AiChatbotWindow.tsx (3 matches)
+  - frontend\src\components\Navbar.tsx (1 matches)
+  - frontend\src\context\AuthContext.tsx (4 matches)

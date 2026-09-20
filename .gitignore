@@ -1,0 +1,30 @@
+# Node
+frontend/node_modules/
+frontend/.next/
+
+# Python
+backend/__pycache__/
+backend/.pytest_cache/
+backend/.venv/
+*.pyc
+
+# Environment
+.env
+.env.local
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Build
+dist/
+build/
+
+# Docker volumes
+postgres_data/

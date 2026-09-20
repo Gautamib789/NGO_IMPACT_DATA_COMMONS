@@ -1,0 +1,287 @@
+{
+  "db_path": "E:\\NGO\\backend\\ngo_commons.db",
+  "backup_path": "E:\\NGO\\backend\\ngo_commons_before_inr_migration_20260902_125025.db",
+  "backup_exists": true,
+  "tables": {
+    "users": {
+      "count": 19,
+      "columns": [
+        "id",
+        "email",
+        "hashed_password",
+        "full_name",
+        "role",
+        "is_active",
+        "created_at"
+      ]
+    },
+    "ledger_blocks": {
+      "count": 22,
+      "columns": [
+        "index",
+        "timestamp",
+        "event_type",
+        "payload_json",
+        "previous_hash",
+        "block_hash",
+        "nonce"
+      ]
+    },
+    "ngo_details": {
+      "count": 8,
+      "columns": [
+        "id",
+        "user_id",
+        "org_name",
+        "registration_number",
+        "tax_id",
+        "category",
+        "mission_statement",
+        "website",
+        "address",
+        "status",
+        "doc_completeness_score",
+        "transparency_score",
+        "total_expenses",
+        "total_donations_received",
+        "beneficiary_count",
+        "rejection_reason",
+        "created_at",
+        "updated_at"
+      ]
+    },
+    "ngo_documents": {
+      "count": 0,
+      "columns": [
+        "id",
+        "ngo_id",
+        "document_type",
+        "file_name",
+        "file_path",
+        "upload_date"
+      ]
+    },
+    "donations": {
+      "count": 21,
+      "columns": [
+        "id",
+        "donor_id",
+        "ngo_id",
+        "amount",
+        "currency",
+        "donor_name",
+        "message",
+        "transaction_hash",
+        "status",
+        "created_at"
+      ]
+    },
+    "fraud_flags": {
+      "count": 2,
+      "columns": [
+        "id",
+        "ngo_id",
+        "severity",
+        "rule_code",
+        "description",
+        "status",
+        "created_at"
+      ]
+    },
+    "alembic_version": {
+      "count": 1,
+      "columns": [
+        "version_num"
+      ]
+    },
+    "otp_codes": {
+      "count": 35,
+      "columns": [
+        "id",
+        "user_id",
+        "purpose",
+        "hashed_otp",
+        "expires_at",
+        "attempt_count",
+        "resend_count",
+        "used",
+        "created_at"
+      ]
+    }
+  },
+  "donation_currency_dist": [
+    [
+      21,
+      "USD"
+    ]
+  ],
+  "total_donations_count": 21,
+  "total_donations_sum": 4680.0,
+  "recent_donations": [
+    [
+      21,
+      2,
+      1,
+      750.0,
+      "USD",
+      "Test Donor INR",
+      null,
+      "0x2d156dc6135ae586e928a3e52875ead192acfd55a74c961158f29b8e01acfd38",
+      "COMPLETED",
+      "2026-09-02 06:24:59.032682"
+    ],
+    [
+      20,
+      2,
+      1,
+      2500.0,
+      "USD",
+      "Aarav Sharma",
+      "Keep up the great healthcare work!",
+      "0xb6f67565c42ee370879eff7241da8d47be8fcc7238c51fa8a05685697a32c3d4",
+      "COMPLETED",
+      "2026-09-02 05:50:18.415106"
+    ],
+    [
+      19,
+      5,
+      8,
+      50.0,
+      "USD",
+      "Bhavani Basaragi",
+      "",
+      "0x7956472938d774ebf0c45ef52e0bb360ddab16ad7f396fdb65a37525bb188690",
+      "COMPLETED",
+      "2026-09-02 05:22:30.873705"
+    ],
+    [
+      18,
+      5,
+      1,
+      10.0,
+      "USD",
+      "Bhavani Basaragi",
+      "",
+      "0x77a819b40fde76c7943ddf0dcdb79e50f64da455097e3797c62882d2dabde8cd",
+      "COMPLETED",
+      "2026-08-13 07:30:09.633795"
+    ],
+    [
+      17,
+      5,
+      1,
+      50.0,
+      "USD",
+      "Bhavani Basaragi",
+      "",
+      "0x204baae2cc335668ec7c5db92e0fa60739bec609a08a90d86236fe20484d3d19",
+      "COMPLETED",
+      "2026-08-13 07:25:54.486757"
+    ],
+    [
+      16,
+      2,
+      1,
+      10.0,
+      "USD",
+      "Test",
+      "diag",
+      "0xe2944b5b9b422b7eefaba5e4ef6feb85f86265435955fb8d558846d5ab70f2b8",
+      "COMPLETED",
+      "2026-08-13 06:53:41.056084"
+    ],
+    [
+      15,
+      2,
+      1,
+      10.0,
+      "USD",
+      "Test",
+      "diag",
+      "0x7edf78bbaa2eddd7ac88523385dcc05825d8ae2893c6dd828e1a39f02036808e",
+      "COMPLETED",
+      "2026-08-13 02:46:03.342271"
+    ],
+    [
+      14,
+      2,
+      1,
+      10.0,
+      "USD",
+      "Test",
+      "diag",
+      "0xf2e273ca1cdbbd977a660fa3dc9ca92a085b8853c09db1c0236023d479fa892a",
+      "COMPLETED",
+      "2026-08-13 02:44:30.076151"
+    ],
+    [
+      13,
+      2,
+      1,
+      10.0,
+      "USD",
+      "Test",
+      "diag",
+      "0xf6a76828f6134a9b0b0768cb65dfff5b06101878f99030978980fda5a2dec181",
+      "COMPLETED",
+      "2026-08-13 02:30:29.274968"
+    ],
+    [
+      12,
+      2,
+      1,
+      10.0,
+      "USD",
+      "Test",
+      "diag",
+      "0xb315cdab2d9778b10cbacbfa90e63b5856e03cf22f9bf556227f220d782f0254",
+      "COMPLETED",
+      "2026-08-13 02:29:39.269151"
+    ]
+  ],
+  "ledger_count": 22,
+  "recent_blocks": [
+    [
+      21,
+      "DONATION_LOGGED",
+      "{\"amount\": 750.0, \"currency\": \"USD\", \"donation_id\": 21, \"donor_email\": \"donor@example.com\", \"ngo_id\": 1, \"ngo_name\": \"GreenEarth Environmental Alliance\", \"tx_hash\": \"0x2d156dc6135ae586e928a3e52875ead192acfd55a74c961158f29b8e01acfd38\"}",
+      "ac9e42d781f989ec449788dbee55cfc0726f76088eaac3bbd057081f1968debc",
+      "c111ad9a0c510698d271f0698e940cb2b6afb6f163eca89d1c65f01a68e97b8c"
+    ],
+    [
+      20,
+      "DONATION_LOGGED",
+      "{\"amount\": 2500.0, \"currency\": \"USD\", \"donation_id\": 20, \"donor_email\": \"donor@example.com\", \"ngo_id\": 1, \"ngo_name\": \"GreenEarth Environmental Alliance\", \"tx_hash\": \"0xb6f67565c42ee370879eff7241da8d47be8fcc7238c51fa8a05685697a32c3d4\"}",
+      "47ee3418427ac285cd8dacda6528ca9cd971d4ed2e26cded0cdad56e87061849",
+      "ac9e42d781f989ec449788dbee55cfc0726f76088eaac3bbd057081f1968debc"
+    ],
+    [
+      19,
+      "DONATION_LOGGED",
+      "{\"amount\": 50.0, \"currency\": \"USD\", \"donation_id\": 19, \"donor_email\": \"basaragishrishail8@gmail.com\", \"ngo_id\": 8, \"ngo_name\": \"Hope Foundation India\", \"tx_hash\": \"0x7956472938d774ebf0c45ef52e0bb360ddab16ad7f396fdb65a37525bb188690\"}",
+      "54de5a423b11d9a23bf174a9a891cc9f580439112b3c539127b78833c39963bd",
+      "47ee3418427ac285cd8dacda6528ca9cd971d4ed2e26cded0cdad56e87061849"
+    ],
+    [
+      18,
+      "DONATION_LOGGED",
+      "{\"amount\": 10.0, \"currency\": \"USD\", \"donation_id\": 18, \"donor_email\": \"basaragishrishail8@gmail.com\", \"ngo_id\": 1, \"ngo_name\": \"GreenEarth Environmental Alliance\", \"tx_hash\": \"0x77a819b40fde76c7943ddf0dcdb79e50f64da455097e3797c62882d2dabde8cd\"}",
+      "a3dc17e5c45344f4293ee4b0a68aeee9ff4a12df9bf5ab5965e5e1356411185f",
+      "54de5a423b11d9a23bf174a9a891cc9f580439112b3c539127b78833c39963bd"
+    ],
+    [
+      17,
+      "DONATION_LOGGED",
+      "{\"amount\": 50.0, \"currency\": \"USD\", \"donation_id\": 17, \"donor_email\": \"basaragishrishail8@gmail.com\", \"ngo_id\": 1, \"ngo_name\": \"GreenEarth Environmental Alliance\", \"tx_hash\": \"0x204baae2cc335668ec7c5db92e0fa60739bec609a08a90d86236fe20484d3d19\"}",
+      "41ebcbb9c2ca06a1f2d580777dfe96153dcb59d176b0e5dde64d787036d100ef",
+      "a3dc17e5c45344f4293ee4b0a68aeee9ff4a12df9bf5ab5965e5e1356411185f"
+    ]
+  ],
+  "ledger_verify": {
+    "valid": true,
+    "total_blocks": 22,
+    "latest_hash": "c111ad9a0c510698d271f0698e940cb2b6afb6f163eca89d1c65f01a68e97b8c",
+    "status": "Chain verified and tamper-free",
+    "verified_at": "02 Sep 2026, 07:20:27 AM UTC"
+  }
+}

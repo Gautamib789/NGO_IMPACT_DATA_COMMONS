@@ -1,0 +1,39 @@
+﻿
+[1] SERVER
+  PASS  server up, stats={'approved_ngos_count': 2, 'total_funds_raised': 1300.0, 'total_donations_count': 14, 'total_beneficiaries_impacted': 4600, 'blockchain_ledger_blocks': 15}
+
+[2] LOGIN
+  PASS  donor login otp_required=False
+  PASS  NGO login otp_required=True
+  PASS  Admin login otp_required=True
+
+[3] PRE-OTP RBAC BLOCK
+  PASS  NGO /profile blocked pre-OTP (403)
+  PASS  Admin /stats blocked pre-OTP (403)
+
+[4] GENERATE-ROLE-OTP
+  PASS  generate-role-otp 200
+
+[5] FORGOT PASSWORD
+  PASS  forgot-password ok
+  PASS  OTP 462169 written to mock_email.txt
+
+[6] RESET PASSWORD
+  PASS  reset-password success
+
+[7] PUBLIC API
+  PASS  GET /api/public/ngos n=2
+  PASS  GET /api/public/stats n=?
+
+[8] DONATION
+  PASS  donation to ngo 1
+
+[9] LEDGER
+  PASS  ledger/verify 200
+
+[10] FRONTEND
+  PASS  frontend :3000 reachable
+
+==================================================
+  TOTAL: 15 PASS / 0 FAIL
+==================================================

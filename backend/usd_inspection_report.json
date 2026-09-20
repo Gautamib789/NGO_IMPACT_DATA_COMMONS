@@ -1,0 +1,609 @@
+{
+  "total_donations": 22,
+  "donations_table_distribution": [
+    [
+      "INR",
+      22,
+      7180.0
+    ]
+  ],
+  "total_ledger_blocks": 23,
+  "ledger_blocks_currency_distribution": {
+    "NO_CURRENCY_FIELD_IN_PAYLOAD": 1,
+    "USD": 21,
+    "INR": 1
+  },
+  "usd_blocks_count": 21,
+  "usd_blocks_detail": [
+    {
+      "block_index": 1,
+      "event_type": "DONATION_LOGGED",
+      "timestamp": "2026-07-25 17:23:20.505461",
+      "payload_currency": "USD",
+      "donation_id": 1,
+      "ngo_id": 1,
+      "ngo_name": "GreenEarth Environmental Alliance",
+      "donor_name": null,
+      "amount": 500.0,
+      "raw_payload": {
+        "amount": 500.0,
+        "currency": "USD",
+        "donation_id": 1,
+        "donor_email": "donor@example.com",
+        "ngo_id": 1,
+        "ngo_name": "GreenEarth Environmental Alliance",
+        "tx_hash": "0x28cd6bca1fcf0f1047a0781feb5e6a044670124b1434bba8b1ef8fe3d38bdd2e"
+      }
+    },
+    {
+      "block_index": 2,
+      "event_type": "DONATION_LOGGED",
+      "timestamp": "2026-07-25 17:54:58.959865",
+      "payload_currency": "USD",
+      "donation_id": 2,
+      "ngo_id": 1,
+      "ngo_name": "GreenEarth Environmental Alliance",
+      "donor_name": null,
+      "amount": 100.0,
+      "raw_payload": {
+        "amount": 100.0,
+        "currency": "USD",
+        "donation_id": 2,
+        "donor_email": "donor@example.com",
+        "ngo_id": 1,
+        "ngo_name": "GreenEarth Environmental Alliance",
+        "tx_hash": "0xa6ed73875154a1bf2f3c8d85af91ebce1bf2d6f0ed8283b7fcb229ac722c9c71"
+      }
+    },
+    {
+      "block_index": 3,
+      "event_type": "DONATION_LOGGED",
+      "timestamp": "2026-07-25 17:57:09.901965",
+      "payload_currency": "USD",
+      "donation_id": 3,
+      "ngo_id": 1,
+      "ngo_name": "GreenEarth Environmental Alliance",
+      "donor_name": null,
+      "amount": 100.0,
+      "raw_payload": {
+        "amount": 100.0,
+        "currency": "USD",
+        "donation_id": 3,
+        "donor_email": "donor@example.com",
+        "ngo_id": 1,
+        "ngo_name": "GreenEarth Environmental Alliance",
+        "tx_hash": "0x5851d7e0cac9125aa6afeca37a731aa56a14534d2dc934cc69d1008787b3e826"
+      }
+    },
+    {
+      "block_index": 4,
+      "event_type": "DONATION_LOGGED",
+      "timestamp": "2026-07-25 17:58:11.842108",
+      "payload_currency": "USD",
+      "donation_id": 4,
+      "ngo_id": 1,
+      "ngo_name": "GreenEarth Environmental Alliance",
+      "donor_name": null,
+      "amount": 100.0,
+      "raw_payload": {
+        "amount": 100.0,
+        "currency": "USD",
+        "donation_id": 4,
+        "donor_email": "donor@example.com",
+        "ngo_id": 1,
+        "ngo_name": "GreenEarth Environmental Alliance",
+        "tx_hash": "0xade86638e9a9da20bd037eee5435c00a8a381e91ceebd872fcad4b1b925b21ce"
+      }
+    },
+    {
+      "block_index": 5,
+      "event_type": "DONATION_LOGGED",
+      "timestamp": "2026-07-25 18:01:20.146032",
+      "payload_currency": "USD",
+      "donation_id": 5,
+      "ngo_id": 1,
+      "ngo_name": "GreenEarth Environmental Alliance",
+      "donor_name": null,
+      "amount": 50.0,
+      "raw_payload": {
+        "amount": 50.0,
+        "currency": "USD",
+        "donation_id": 5,
+        "donor_email": "donor@example.com",
+        "ngo_id": 1,
+        "ngo_name": "GreenEarth Environmental Alliance",
+        "tx_hash": "0x3d65e67bd02eb0d2c86313a3876125a3a28bf74b886b77282681b9d8434d9608"
+      }
+    },
+    {
+      "block_index": 6,
+      "event_type": "DONATION_LOGGED",
+      "timestamp": "2026-07-25 18:02:13.684322",
+      "payload_currency": "USD",
+      "donation_id": 6,
+      "ngo_id": 1,
+      "ngo_name": "GreenEarth Environmental Alliance",
+      "donor_name": null,
+      "amount": 50.0,
+      "raw_payload": {
+        "amount": 50.0,
+        "currency": "USD",
+        "donation_id": 6,
+        "donor_email": "donor@example.com",
+        "ngo_id": 1,
+        "ngo_name": "GreenEarth Environmental Alliance",
+        "tx_hash": "0x79bc0fadc3c92e2b8eacdf126d13c1956e8bc338177acb3d008aa4d48eb6b7a4"
+      }
+    },
+    {
+      "block_index": 7,
+      "event_type": "DONATION_LOGGED",
+      "timestamp": "2026-07-28 18:48:04.886771",
+      "payload_currency": "USD",
+      "donation_id": 7,
+      "ngo_id": 1,
+      "ngo_name": "GreenEarth Environmental Alliance",
+      "donor_name": null,
+      "amount": 50.0,
+      "raw_payload": {
+        "amount": 50.0,
+        "currency": "USD",
+        "donation_id": 7,
+        "donor_email": "donor@example.com",
+        "ngo_id": 1,
+        "ngo_name": "GreenEarth Environmental Alliance",
+        "tx_hash": "0xfe29ebda387cec3e0fdbea8c301cd79b7483362418d813162b6cf31b96a2fe74"
+      }
+    },
+    {
+      "block_index": 8,
+      "event_type": "DONATION_LOGGED",
+      "timestamp": "2026-07-28 18:51:00.349741",
+      "payload_currency": "USD",
+      "donation_id": 8,
+      "ngo_id": 1,
+      "ngo_name": "GreenEarth Environmental Alliance",
+      "donor_name": null,
+      "amount": 150.0,
+      "raw_payload": {
+        "amount": 150.0,
+        "currency": "USD",
+        "donation_id": 8,
+        "donor_email": "donor@example.com",
+        "ngo_id": 1,
+        "ngo_name": "GreenEarth Environmental Alliance",
+        "tx_hash": "0xb03bb68f5dcacacd5d4c37d844a4b53d8b28d763b4856b5798e46eeced00c7e3"
+      }
+    },
+    {
+      "block_index": 9,
+      "event_type": "DONATION_LOGGED",
+      "timestamp": "2026-07-28 19:13:26.350041",
+      "payload_currency": "USD",
+      "donation_id": 9,
+      "ngo_id": 1,
+      "ngo_name": "GreenEarth Environmental Alliance",
+      "donor_name": null,
+      "amount": 150.0,
+      "raw_payload": {
+        "amount": 150.0,
+        "currency": "USD",
+        "donation_id": 9,
+        "donor_email": "donor@example.com",
+        "ngo_id": 1,
+        "ngo_name": "GreenEarth Environmental Alliance",
+        "tx_hash": "0x6fb94979ced4a98b3def82ab0ef8486a20dbd1210c17fe51d477589324831af9"
+      }
+    },
+    {
+      "block_index": 10,
+      "event_type": "DONATION_LOGGED",
+      "timestamp": "2026-08-13 02:28:08.954082",
+      "payload_currency": "USD",
+      "donation_id": 10,
+      "ngo_id": 1,
+      "ngo_name": "GreenEarth Environmental Alliance",
+      "donor_name": null,
+      "amount": 10.0,
+      "raw_payload": {
+        "amount": 10.0,
+        "currency": "USD",
+        "donation_id": 10,
+        "donor_email": "donor@example.com",
+        "ngo_id": 1,
+        "ngo_name": "GreenEarth Environmental Alliance",
+        "tx_hash": "0xc08d88a32aab5feaff63461158ee0c5366f9cc7e4f646a6d07c90e5cdb399f29"
+      }
+    },
+    {
+      "block_index": 11,
+      "event_type": "DONATION_LOGGED",
+      "timestamp": "2026-08-13 02:28:53.502962",
+      "payload_currency": "USD",
+      "donation_id": 11,
+      "ngo_id": 1,
+      "ngo_name": "GreenEarth Environmental Alliance",
+      "donor_name": null,
+      "amount": 10.0,
+      "raw_payload": {
+        "amount": 10.0,
+        "currency": "USD",
+        "donation_id": 11,
+        "donor_email": "donor@example.com",
+        "ngo_id": 1,
+        "ngo_name": "GreenEarth Environmental Alliance",
+        "tx_hash": "0x77605b63e705ec1e33370fa3292aa8bb40555026b267baf1e30a617c40e9d4b4"
+      }
+    },
+    {
+      "block_index": 12,
+      "event_type": "DONATION_LOGGED",
+      "timestamp": "2026-08-13 02:29:39.279627",
+      "payload_currency": "USD",
+      "donation_id": 12,
+      "ngo_id": 1,
+      "ngo_name": "GreenEarth Environmental Alliance",
+      "donor_name": null,
+      "amount": 10.0,
+      "raw_payload": {
+        "amount": 10.0,
+        "currency": "USD",
+        "donation_id": 12,
+        "donor_email": "donor@example.com",
+        "ngo_id": 1,
+        "ngo_name": "GreenEarth Environmental Alliance",
+        "tx_hash": "0xb315cdab2d9778b10cbacbfa90e63b5856e03cf22f9bf556227f220d782f0254"
+      }
+    },
+    {
+      "block_index": 13,
+      "event_type": "DONATION_LOGGED",
+      "timestamp": "2026-08-13 02:30:29.300058",
+      "payload_currency": "USD",
+      "donation_id": 13,
+      "ngo_id": 1,
+      "ngo_name": "GreenEarth Environmental Alliance",
+      "donor_name": null,
+      "amount": 10.0,
+      "raw_payload": {
+        "amount": 10.0,
+        "currency": "USD",
+        "donation_id": 13,
+        "donor_email": "donor@example.com",
+        "ngo_id": 1,
+        "ngo_name": "GreenEarth Environmental Alliance",
+        "tx_hash": "0xf6a76828f6134a9b0b0768cb65dfff5b06101878f99030978980fda5a2dec181"
+      }
+    },
+    {
+      "block_index": 14,
+      "event_type": "DONATION_LOGGED",
+      "timestamp": "2026-08-13 02:44:30.095829",
+      "payload_currency": "USD",
+      "donation_id": 14,
+      "ngo_id": 1,
+      "ngo_name": "GreenEarth Environmental Alliance",
+      "donor_name": null,
+      "amount": 10.0,
+      "raw_payload": {
+        "amount": 10.0,
+        "currency": "USD",
+        "donation_id": 14,
+        "donor_email": "donor@example.com",
+        "ngo_id": 1,
+        "ngo_name": "GreenEarth Environmental Alliance",
+        "tx_hash": "0xf2e273ca1cdbbd977a660fa3dc9ca92a085b8853c09db1c0236023d479fa892a"
+      }
+    },
+    {
+      "block_index": 15,
+      "event_type": "DONATION_LOGGED",
+      "timestamp": "2026-08-13 02:46:03.359973",
+      "payload_currency": "USD",
+      "donation_id": 15,
+      "ngo_id": 1,
+      "ngo_name": "GreenEarth Environmental Alliance",
+      "donor_name": null,
+      "amount": 10.0,
+      "raw_payload": {
+        "amount": 10.0,
+        "currency": "USD",
+        "donation_id": 15,
+        "donor_email": "donor@example.com",
+        "ngo_id": 1,
+        "ngo_name": "GreenEarth Environmental Alliance",
+        "tx_hash": "0x7edf78bbaa2eddd7ac88523385dcc05825d8ae2893c6dd828e1a39f02036808e"
+      }
+    },
+    {
+      "block_index": 16,
+      "event_type": "DONATION_LOGGED",
+      "timestamp": "2026-08-13 06:53:41.070770",
+      "payload_currency": "USD",
+      "donation_id": 16,
+      "ngo_id": 1,
+      "ngo_name": "GreenEarth Environmental Alliance",
+      "donor_name": null,
+      "amount": 10.0,
+      "raw_payload": {
+        "amount": 10.0,
+        "currency": "USD",
+        "donation_id": 16,
+        "donor_email": "donor@example.com",
+        "ngo_id": 1,
+        "ngo_name": "GreenEarth Environmental Alliance",
+        "tx_hash": "0xe2944b5b9b422b7eefaba5e4ef6feb85f86265435955fb8d558846d5ab70f2b8"
+      }
+    },
+    {
+      "block_index": 17,
+      "event_type": "DONATION_LOGGED",
+      "timestamp": "2026-08-13 07:25:54.525612",
+      "payload_currency": "USD",
+      "donation_id": 17,
+      "ngo_id": 1,
+      "ngo_name": "GreenEarth Environmental Alliance",
+      "donor_name": null,
+      "amount": 50.0,
+      "raw_payload": {
+        "amount": 50.0,
+        "currency": "USD",
+        "donation_id": 17,
+        "donor_email": "basaragishrishail8@gmail.com",
+        "ngo_id": 1,
+        "ngo_name": "GreenEarth Environmental Alliance",
+        "tx_hash": "0x204baae2cc335668ec7c5db92e0fa60739bec609a08a90d86236fe20484d3d19"
+      }
+    },
+    {
+      "block_index": 18,
+      "event_type": "DONATION_LOGGED",
+      "timestamp": "2026-08-13 07:30:09.674036",
+      "payload_currency": "USD",
+      "donation_id": 18,
+      "ngo_id": 1,
+      "ngo_name": "GreenEarth Environmental Alliance",
+      "donor_name": null,
+      "amount": 10.0,
+      "raw_payload": {
+        "amount": 10.0,
+        "currency": "USD",
+        "donation_id": 18,
+        "donor_email": "basaragishrishail8@gmail.com",
+        "ngo_id": 1,
+        "ngo_name": "GreenEarth Environmental Alliance",
+        "tx_hash": "0x77a819b40fde76c7943ddf0dcdb79e50f64da455097e3797c62882d2dabde8cd"
+      }
+    },
+    {
+      "block_index": 19,
+      "event_type": "DONATION_LOGGED",
+      "timestamp": "2026-09-02 05:22:30.925480",
+      "payload_currency": "USD",
+      "donation_id": 19,
+      "ngo_id": 8,
+      "ngo_name": "Hope Foundation India",
+      "donor_name": null,
+      "amount": 50.0,
+      "raw_payload": {
+        "amount": 50.0,
+        "currency": "USD",
+        "donation_id": 19,
+        "donor_email": "basaragishrishail8@gmail.com",
+        "ngo_id": 8,
+        "ngo_name": "Hope Foundation India",
+        "tx_hash": "0x7956472938d774ebf0c45ef52e0bb360ddab16ad7f396fdb65a37525bb188690"
+      }
+    },
+    {
+      "block_index": 20,
+      "event_type": "DONATION_LOGGED",
+      "timestamp": "2026-09-02 05:50:18.441737",
+      "payload_currency": "USD",
+      "donation_id": 20,
+      "ngo_id": 1,
+      "ngo_name": "GreenEarth Environmental Alliance",
+      "donor_name": null,
+      "amount": 2500.0,
+      "raw_payload": {
+        "amount": 2500.0,
+        "currency": "USD",
+        "donation_id": 20,
+        "donor_email": "donor@example.com",
+        "ngo_id": 1,
+        "ngo_name": "GreenEarth Environmental Alliance",
+        "tx_hash": "0xb6f67565c42ee370879eff7241da8d47be8fcc7238c51fa8a05685697a32c3d4"
+      }
+    },
+    {
+      "block_index": 21,
+      "event_type": "DONATION_LOGGED",
+      "timestamp": "2026-09-02 06:24:59.057532",
+      "payload_currency": "USD",
+      "donation_id": 21,
+      "ngo_id": 1,
+      "ngo_name": "GreenEarth Environmental Alliance",
+      "donor_name": null,
+      "amount": 750.0,
+      "raw_payload": {
+        "amount": 750.0,
+        "currency": "USD",
+        "donation_id": 21,
+        "donor_email": "donor@example.com",
+        "ngo_id": 1,
+        "ngo_name": "GreenEarth Environmental Alliance",
+        "tx_hash": "0x2d156dc6135ae586e928a3e52875ead192acfd55a74c961158f29b8e01acfd38"
+      }
+    }
+  ],
+  "all_blocks_summary": [
+    {
+      "index": 0,
+      "event": "GENESIS",
+      "donation_id": null,
+      "amount": null,
+      "payload_currency": "NO_CURRENCY_FIELD_IN_PAYLOAD"
+    },
+    {
+      "index": 1,
+      "event": "DONATION_LOGGED",
+      "donation_id": 1,
+      "amount": 500.0,
+      "payload_currency": "USD"
+    },
+    {
+      "index": 2,
+      "event": "DONATION_LOGGED",
+      "donation_id": 2,
+      "amount": 100.0,
+      "payload_currency": "USD"
+    },
+    {
+      "index": 3,
+      "event": "DONATION_LOGGED",
+      "donation_id": 3,
+      "amount": 100.0,
+      "payload_currency": "USD"
+    },
+    {
+      "index": 4,
+      "event": "DONATION_LOGGED",
+      "donation_id": 4,
+      "amount": 100.0,
+      "payload_currency": "USD"
+    },
+    {
+      "index": 5,
+      "event": "DONATION_LOGGED",
+      "donation_id": 5,
+      "amount": 50.0,
+      "payload_currency": "USD"
+    },
+    {
+      "index": 6,
+      "event": "DONATION_LOGGED",
+      "donation_id": 6,
+      "amount": 50.0,
+      "payload_currency": "USD"
+    },
+    {
+      "index": 7,
+      "event": "DONATION_LOGGED",
+      "donation_id": 7,
+      "amount": 50.0,
+      "payload_currency": "USD"
+    },
+    {
+      "index": 8,
+      "event": "DONATION_LOGGED",
+      "donation_id": 8,
+      "amount": 150.0,
+      "payload_currency": "USD"
+    },
+    {
+      "index": 9,
+      "event": "DONATION_LOGGED",
+      "donation_id": 9,
+      "amount": 150.0,
+      "payload_currency": "USD"
+    },
+    {
+      "index": 10,
+      "event": "DONATION_LOGGED",
+      "donation_id": 10,
+      "amount": 10.0,
+      "payload_currency": "USD"
+    },
+    {
+      "index": 11,
+      "event": "DONATION_LOGGED",
+      "donation_id": 11,
+      "amount": 10.0,
+      "payload_currency": "USD"
+    },
+    {
+      "index": 12,
+      "event": "DONATION_LOGGED",
+      "donation_id": 12,
+      "amount": 10.0,
+      "payload_currency": "USD"
+    },
+    {
+      "index": 13,
+      "event": "DONATION_LOGGED",
+      "donation_id": 13,
+      "amount": 10.0,
+      "payload_currency": "USD"
+    },
+    {
+      "index": 14,
+      "event": "DONATION_LOGGED",
+      "donation_id": 14,
+      "amount": 10.0,
+      "payload_currency": "USD"
+    },
+    {
+      "index": 15,
+      "event": "DONATION_LOGGED",
+      "donation_id": 15,
+      "amount": 10.0,
+      "payload_currency": "USD"
+    },
+    {
+      "index": 16,
+      "event": "DONATION_LOGGED",
+      "donation_id": 16,
+      "amount": 10.0,
+      "payload_currency": "USD"
+    },
+    {
+      "index": 17,
+      "event": "DONATION_LOGGED",
+      "donation_id": 17,
+      "amount": 50.0,
+      "payload_currency": "USD"
+    },
+    {
+      "index": 18,
+      "event": "DONATION_LOGGED",
+      "donation_id": 18,
+      "amount": 10.0,
+      "payload_currency": "USD"
+    },
+    {
+      "index": 19,
+      "event": "DONATION_LOGGED",
+      "donation_id": 19,
+      "amount": 50.0,
+      "payload_currency": "USD"
+    },
+    {
+      "index": 20,
+      "event": "DONATION_LOGGED",
+      "donation_id": 20,
+      "amount": 2500.0,
+      "payload_currency": "USD"
+    },
+    {
+      "index": 21,
+      "event": "DONATION_LOGGED",
+      "donation_id": 21,
+      "amount": 750.0,
+      "payload_currency": "USD"
+    },
+    {
+      "index": 22,
+      "event": "DONATION_LOGGED",
+      "donation_id": 22,
+      "amount": 2500.0,
+      "payload_currency": "INR"
+    }
+  ],
+  "ledger_verify": {
+    "valid": true,
+    "total_blocks": 23,
+    "latest_hash": "c6b0825a553e9bb900c23742666b15daf1e998b528a33086e8741ece3b6ea882",
+    "status": "Chain verified and tamper-free",
+    "verified_at": "02 Sep 2026, 07:51:55 AM UTC"
+  }
+}

@@ -1,0 +1,98 @@
+﻿python : E:\NGO\backend\app
+\services\ai_chatbot.py:2: 
+FutureWarning: 
+At line:1 char:1
++ python 
+test_phase2_schema.py 2>&1 
+| Out-File -FilePath 
+'test_output.t ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~
+    + CategoryInfo         
+     : NotSpecified: (E:\  
+  NGO\backend\...FutureW   
+ arning: :String) [], R    
+emoteException
+    + FullyQualifiedErrorI 
+   d : NativeCommandError
+ 
+
+All support for the 
+`google.generativeai` 
+package has ended. It will 
+no longer be receiving 
+updates or bug fixes. 
+Please switch to the 
+`google.genai` package as 
+soon as possible.
+See README for more 
+details:
+
+https://github.com/google-g
+emini/deprecated-generative
+-ai-python/blob/main/README
+.md
+
+  import 
+google.generativeai as 
+genai
+Note on adding column established_date to ngo_details: Not an executable object: 'ALTER TABLE ngo_details ADD COLUMN established_date DATETIME'
+Note on adding column organization_type to ngo_details: Not an executable object: "ALTER TABLE ngo_details ADD COLUMN organization_type VARCHAR DEFAULT 'Trust'"
+Note on adding column city to ngo_details: Not an executable object: 'ALTER TABLE ngo_details ADD COLUMN city VARCHAR'
+Note on adding column state to ngo_details: Not an executable object: 'ALTER TABLE ngo_details ADD COLUMN state VARCHAR'
+Note on adding column district to ngo_details: Not an executable object: 'ALTER TABLE ngo_details ADD COLUMN district VARCHAR'
+Note on adding column pin_code to ngo_details: Not an executable object: 'ALTER TABLE ngo_details ADD COLUMN pin_code VARCHAR'
+Note on adding column phone to ngo_details: Not an executable object: 'ALTER TABLE ngo_details ADD COLUMN phone VARCHAR'
+Note on adding column vision to ngo_details: Not an executable object: 'ALTER TABLE ngo_details ADD COLUMN vision TEXT'
+Note on adding column operating_areas to ngo_details: Not an executable object: 'ALTER TABLE ngo_details ADD COLUMN operating_areas TEXT'
+Note on adding column pan to ngo_details: Not an executable object: 'ALTER TABLE ngo_details ADD COLUMN pan VARCHAR'
+Note on adding column eighty_g_info to ngo_details: Not an executable object: 'ALTER TABLE ngo_details ADD COLUMN eighty_g_info VARCHAR'
+Note on adding column fcra_info to ngo_details: Not an executable object: 'ALTER TABLE ngo_details ADD COLUMN fcra_info VARCHAR'
+Note on adding column gst_number to ngo_details: Not an executable object: 'ALTER TABLE ngo_details ADD COLUMN gst_number VARCHAR'
+Note on adding column government_verification_status to ngo_details: Not an executable object: "ALTER TABLE ngo_details ADD COLUMN government_verification_status VARCHAR DEFAULT 'NOT_VERIFIED'"
+Traceback (most recent 
+call last):
+Note on adding column risk_level to ngo_details: Not an executable object: "ALTER TABLE ngo_details ADD COLUMN risk_level VARCHAR DEFAULT 'LOW'"
+Note on adding column sha256_hash to ngo_documents: Not an executable object: 'ALTER TABLE ngo_documents ADD COLUMN sha256_hash VARCHAR'
+Note on adding column mime_type to ngo_documents: Not an executable object: 'ALTER TABLE ngo_documents ADD COLUMN mime_type VARCHAR'
+Note on adding column file_size to ngo_documents: Not an executable object: 'ALTER TABLE ngo_documents ADD COLUMN file_size INTEGER'
+Note on adding column verification_status to ngo_documents: Not an executable object: "ALTER TABLE ngo_documents ADD COLUMN verification_status VARCHAR DEFAULT 'PROCESSING'"
+Note on adding column verification_message to ngo_documents: Not an executable object: 'ALTER TABLE ngo_documents ADD COLUMN verification_message TEXT'
+Note on adding column tamper_risk_score to ngo_documents: Not an executable object: 'ALTER TABLE ngo_documents ADD COLUMN tamper_risk_score FLOAT DEFAULT 0.0'
+Note on adding column tamper_risk_level to ngo_documents: Not an executable object: "ALTER TABLE ngo_documents ADD COLUMN tamper_risk_level VARCHAR DEFAULT 'LOW'"
+Note on adding column ocr_text to ngo_documents: Not an executable object: 'ALTER TABLE ngo_documents ADD COLUMN ocr_text TEXT'
+Note on adding column exif_metadata to ngo_documents: Not an executable object: 'ALTER TABLE ngo_documents ADD COLUMN exif_metadata TEXT'
+Note on adding column gps_latitude to ngo_documents: Not an executable object: 'ALTER TABLE ngo_documents ADD COLUMN gps_latitude FLOAT'
+Note on adding column gps_longitude to ngo_documents: Not an executable object: 'ALTER TABLE ngo_documents ADD COLUMN gps_longitude FLOAT'
+Note on adding column capture_timestamp to ngo_documents: Not an executable object: 'ALTER TABLE ngo_documents ADD COLUMN capture_timestamp DATETIME'
+Note on adding column reviewed_by to ngo_documents: Not an executable object: 'ALTER TABLE ngo_documents ADD COLUMN reviewed_by INTEGER REFERENCES users(id)'
+Note on adding column reviewed_at to ngo_documents: Not an executable object: 'ALTER TABLE ngo_documents ADD COLUMN reviewed_at DATETIME'
+Note on adding column review_notes to ngo_documents: Not an executable object: 'ALTER TABLE ngo_documents ADD COLUMN review_notes TEXT'
+=== STARTING PHASE 2 SCHEMA & BACKEND VERIFICATION ===
+  File "E:\NGO\backend\test
+_phase2_schema.py", line 
+150, in <module>
+    test_phase2()
+  File "E:\NGO\backend\test
+_phase2_schema.py", line 
+19, in test_phase2
+    print(f"\u2713 Test 1 
+Passed: {len(users)} 
+existing users loaded 
+successfully")
+  File "C:\Users\BHAVANI\Ap
+pData\Local\Programs\Python
+\Python311\Lib\encodings\cp
+1252.py", line 19, in 
+encode
+    return codecs.charmap_e
+ncode(input,self.errors,enc
+oding_table)[0]
+           ^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^
+UnicodeEncodeError: 
+'charmap' codec can't 
+encode character '\u2713' 
+in position 0: character 
+maps to <undefined>

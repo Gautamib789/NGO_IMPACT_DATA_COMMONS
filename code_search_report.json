@@ -1,0 +1,498 @@
+{
+  "backend_matches_count": 15,
+  "frontend_matches_count": 83,
+  "backend_matches": [
+    {
+      "file": "backend\\diag.py",
+      "line_no": 77,
+      "line": "json={\"ngo_id\":ngos[0][\"id\"],\"amount\":10,\"currency\":\"USD\",\"donor_name\":\"Test\",\"message\":\"diag\"})"
+    },
+    {
+      "file": "backend\\search_code.py",
+      "line_no": 11,
+      "line": "keywords = [r\"\\bUSD\\b\", r\"\\busd\\b\", r\"US Dollar\", r\"\\b\\$\\b\", r\"currency\", r\"amount\"]"
+    },
+    {
+      "file": "backend\\search_code.py",
+      "line_no": 30,
+      "line": "# Look for USD specifically or currency defaults"
+    },
+    {
+      "file": "backend\\search_code.py",
+      "line_no": 31,
+      "line": "if re.search(r\"\\bUSD\\b|\\busd\\b|US Dollar|\\$\", line, re.IGNORECASE) or \"currency\" in line.lower():"
+    },
+    {
+      "file": "backend\\app\\models\\donation.py",
+      "line_no": 14,
+      "line": "currency = Column(String, default=\"INR\")"
+    },
+    {
+      "file": "backend\\app\\routers\\donation.py",
+      "line_no": 40,
+      "line": "currency=donation_in.currency,"
+    },
+    {
+      "file": "backend\\app\\routers\\donation.py",
+      "line_no": 67,
+      "line": "\"currency\": donation.currency"
+    },
+    {
+      "file": "backend\\app\\routers\\ledger.py",
+      "line_no": 105,
+      "line": "# Sum ALL donations (INR + historical USD) \u2014 displayed with note in UI"
+    },
+    {
+      "file": "backend\\app\\routers\\ledger.py",
+      "line_no": 107,
+      "line": "inr_funds = float(db.query(func.sum(Donation.amount)).filter(Donation.currency == \"INR\").scalar() or 0.0)"
+    },
+    {
+      "file": "backend\\app\\routers\\ledger.py",
+      "line_no": 108,
+      "line": "usd_funds = float(db.query(func.sum(Donation.amount)).filter(Donation.currency == \"USD\").scalar() or 0.0)"
+    },
+    {
+      "file": "backend\\app\\routers\\ledger.py",
+      "line_no": 115,
+      "line": "\"total_funds_usd\": usd_funds,          # USD only (historical)"
+    },
+    {
+      "file": "backend\\app\\schemas\\donation.py",
+      "line_no": 9,
+      "line": "currency: str = \"INR\""
+    },
+    {
+      "file": "backend\\app\\schemas\\donation.py",
+      "line_no": 19,
+      "line": "currency: str"
+    },
+    {
+      "file": "backend\\app\\services\\fraud_engine.py",
+      "line_no": 23,
+      "line": "description=f\"Total expenses (${ngo.total_expenses:,.2f}) exceed total received donations (${ngo.total_donations_received:,.2f}) by {excess_pct}%.\""
+    },
+    {
+      "file": "backend\\app\\services\\fraud_engine.py",
+      "line_no": 45,
+      "line": "description=f\"High expense footprint (${ngo.total_expenses:,.2f}) recorded with low beneficiary impact ({ngo.beneficiary_count} reported).\""
+    }
+  ],
+  "frontend_matches": [
+    {
+      "file": "frontend\\src\\app\\page.tsx",
+      "line_no": 165,
+      "line": "currency: 'USD',"
+    },
+    {
+      "file": "frontend\\src\\app\\page.tsx",
+      "line_no": 274,
+      "line": "<span className=\"font-bold text-slate-900 text-sm\">$124,500</span>"
+    },
+    {
+      "file": "frontend\\src\\app\\page.tsx",
+      "line_no": 442,
+      "line": "<span className=\"font-bold text-slate-900\">${ngo.total_donations_received.toLocaleString()}</span>"
+    },
+    {
+      "file": "frontend\\src\\app\\page.tsx",
+      "line_no": 455,
+      "line": "href={`/ngo/${ngo.id}`}"
+    },
+    {
+      "file": "frontend\\src\\app\\page.tsx",
+      "line_no": 495,
+      "line": "className={`flex items-center space-x-2 rounded-full px-4.5 py-2.5 text-xs font-semibold border transition-all ${"
+    },
+    {
+      "file": "frontend\\src\\app\\page.tsx",
+      "line_no": 501,
+      "line": "<IconComp className={`h-4 w-4 ${isSelected ? 'text-white' : 'text-blue-600'}`} />"
+    },
+    {
+      "file": "frontend\\src\\app\\page.tsx",
+      "line_no": 536,
+      "line": "<div className={`h-40 w-full bg-gradient-to-br ${work.accentColor} p-5 relative flex flex-col justify-between text-white overflow-hidden`}>"
+    },
+    {
+      "file": "frontend\\src\\app\\page.tsx",
+      "line_no": 652,
+      "line": "${(stats?.total_funds_raised || 0).toLocaleString('en-US', { minimumFractionDigits: 0 })}"
+    },
+    {
+      "file": "frontend\\src\\app\\page.tsx",
+      "line_no": 784,
+      "line": "Thank you! Your donation of <span className=\"font-bold text-blue-600\">${donationSuccess.amount} {donationSuccess.currency}</span> to <span className=\"font-bold text-slate-900\">{donationSuccess.ngo_name}</span> has been logged on the SHA-256 ledger."
+    },
+    {
+      "file": "frontend\\src\\app\\page.tsx",
+      "line_no": 819,
+      "line": "<label className=\"block text-xs font-semibold text-slate-700 mb-2\">Select Donation Amount (USD)</label>"
+    },
+    {
+      "file": "frontend\\src\\app\\page.tsx",
+      "line_no": 829,
+      "line": "className={`rounded-xl py-2.5 text-xs font-bold transition-all ${"
+    },
+    {
+      "file": "frontend\\src\\app\\page.tsx",
+      "line_no": 835,
+      "line": "${amt}"
+    },
+    {
+      "file": "frontend\\src\\app\\page.tsx",
+      "line_no": 842,
+      "line": "placeholder=\"Or enter custom amount ($)...\""
+    },
+    {
+      "file": "frontend\\src\\app\\admin\\dashboard\\page.tsx",
+      "line_no": 77,
+      "line": "await apiFetch(`/api/admin/ngos/${ngoId}/approve`, { method: 'POST' });"
+    },
+    {
+      "file": "frontend\\src\\app\\admin\\dashboard\\page.tsx",
+      "line_no": 89,
+      "line": "await apiFetch(`/api/admin/ngos/${rejectingNgoId}/reject`, {"
+    },
+    {
+      "file": "frontend\\src\\app\\admin\\dashboard\\page.tsx",
+      "line_no": 103,
+      "line": "await apiFetch(`/api/fraud/resolve/${flagId}`, { method: 'POST' });"
+    },
+    {
+      "file": "frontend\\src\\app\\admin\\dashboard\\page.tsx",
+      "line_no": 148,
+      "line": "className={`flex items-center space-x-2 rounded-xl px-4 py-2.5 text-xs font-bold transition-all ${"
+    },
+    {
+      "file": "frontend\\src\\app\\admin\\dashboard\\page.tsx",
+      "line_no": 160,
+      "line": "className={`flex items-center space-x-2 rounded-xl px-4 py-2.5 text-xs font-bold transition-all ${"
+    },
+    {
+      "file": "frontend\\src\\app\\admin\\dashboard\\page.tsx",
+      "line_no": 172,
+      "line": "className={`flex items-center space-x-2 rounded-xl px-4 py-2.5 text-xs font-bold transition-all ${"
+    },
+    {
+      "file": "frontend\\src\\app\\admin\\dashboard\\page.tsx",
+      "line_no": 273,
+      "line": "<span className={`px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold uppercase border ${"
+    },
+    {
+      "file": "frontend\\src\\app\\admin\\dashboard\\page.tsx",
+      "line_no": 308,
+      "line": "<div key={flag.id} className={`glass-panel p-5 space-y-3 border-l-4 ${"
+    },
+    {
+      "file": "frontend\\src\\app\\admin\\dashboard\\page.tsx",
+      "line_no": 314,
+      "line": "<span className={`px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold uppercase ${"
+    },
+    {
+      "file": "frontend\\src\\app\\choose-role\\page.tsx",
+      "line_no": 115,
+      "line": "className={`group relative text-left rounded-2xl border p-8 transition-all hover:-translate-y-1 hover:shadow-xl ${role.color} ${loading && !isClicking ? 'opacity-50 grayscale' : ''}`}"
+    },
+    {
+      "file": "frontend\\src\\app\\donor\\dashboard\\page.tsx",
+      "line_no": 12,
+      "line": "currency: string;"
+    },
+    {
+      "file": "frontend\\src\\app\\donor\\dashboard\\page.tsx",
+      "line_no": 67,
+      "line": "<p className=\"text-2xl font-bold text-emerald-400\">${totalDonated.toLocaleString('en-US', { minimumFractionDigits: 2 })}</p>"
+    },
+    {
+      "file": "frontend\\src\\app\\donor\\dashboard\\page.tsx",
+      "line_no": 128,
+      "line": "${don.amount.toFixed(2)} {don.currency}"
+    },
+    {
+      "file": "frontend\\src\\app\\explore\\page.tsx",
+      "line_no": 123,
+      "line": "router.push(`/explore?${params.toString()}`);"
+    },
+    {
+      "file": "frontend\\src\\app\\explore\\page.tsx",
+      "line_no": 142,
+      "line": "const data = await apiFetch(`/api/public/ngos?${params.toString()}`);"
+    },
+    {
+      "file": "frontend\\src\\app\\explore\\page.tsx",
+      "line_no": 233,
+      "line": "currency: 'USD',"
+    },
+    {
+      "file": "frontend\\src\\app\\explore\\page.tsx",
+      "line_no": 482,
+      "line": "href={`/ngo/${ngo.id}`}"
+    },
+    {
+      "file": "frontend\\src\\app\\explore\\page.tsx",
+      "line_no": 552,
+      "line": "Thank you! Your donation of <span className=\"font-bold text-emerald-700\">${donationSuccess.amount} {donationSuccess.currency}</span> to <span className=\"font-bold text-slate-900\">{donationSuccess.ngo_name}</span> has been logged on the SHA-256 blockchain ledger."
+    },
+    {
+      "file": "frontend\\src\\app\\explore\\page.tsx",
+      "line_no": 588,
+      "line": "<label className=\"block text-xs font-bold text-slate-700 mb-2\">Select Amount (USD)</label>"
+    },
+    {
+      "file": "frontend\\src\\app\\explore\\page.tsx",
+      "line_no": 598,
+      "line": "className={`rounded-xl py-2 text-xs font-bold transition-all ${"
+    },
+    {
+      "file": "frontend\\src\\app\\explore\\page.tsx",
+      "line_no": 604,
+      "line": "${amt}"
+    },
+    {
+      "file": "frontend\\src\\app\\explore\\page.tsx",
+      "line_no": 611,
+      "line": "placeholder=\"Or enter custom amount ($)...\""
+    },
+    {
+      "file": "frontend\\src\\app\\forgot-password\\page.tsx",
+      "line_no": 29,
+      "line": "router.push(`/reset-password?email=${encodeURIComponent(email)}${devParam}`);"
+    },
+    {
+      "file": "frontend\\src\\app\\ledger\\page.tsx",
+      "line_no": 34,
+      "line": "currency?: string;"
+    },
+    {
+      "file": "frontend\\src\\app\\ledger\\page.tsx",
+      "line_no": 89,
+      "line": "// Format monetary values in INR/USD with Indian numbering"
+    },
+    {
+      "file": "frontend\\src\\app\\ledger\\page.tsx",
+      "line_no": 90,
+      "line": "const formatCurrency = (amount?: number | null, currency: string = 'INR') => {"
+    },
+    {
+      "file": "frontend\\src\\app\\ledger\\page.tsx",
+      "line_no": 93,
+      "line": "if (currency === 'USD' || currency === '$') {"
+    },
+    {
+      "file": "frontend\\src\\app\\ledger\\page.tsx",
+      "line_no": 94,
+      "line": "return `$${formattedNum}`;"
+    },
+    {
+      "file": "frontend\\src\\app\\ledger\\page.tsx",
+      "line_no": 96,
+      "line": "return `\\u20B9${formattedNum}`;"
+    },
+    {
+      "file": "frontend\\src\\app\\ledger\\page.tsx",
+      "line_no": 121,
+      "line": "return `${hash.substring(0, 8)}...${hash.substring(hash.length - 8)}`;"
+    },
+    {
+      "file": "frontend\\src\\app\\ledger\\page.tsx",
+      "line_no": 141,
+      "line": "router.push(`/ledger?${params.toString()}`);"
+    },
+    {
+      "file": "frontend\\src\\app\\ledger\\page.tsx",
+      "line_no": 176,
+      "line": "const data = await apiFetch(`/api/ledger/blocks?${params.toString()}`);"
+    },
+    {
+      "file": "frontend\\src\\app\\ledger\\page.tsx",
+      "line_no": 293,
+      "line": "<span className={`text-sm font-bold ${isChainValid ? 'text-emerald-700' : 'text-rose-700'}`}>"
+    },
+    {
+      "file": "frontend\\src\\app\\ledger\\page.tsx",
+      "line_no": 309,
+      "line": "<RefreshCw className={`h-4 w-4 ${verifying ? 'animate-spin' : ''}`} />"
+    },
+    {
+      "file": "frontend\\src\\app\\ledger\\page.tsx",
+      "line_no": 330,
+      "line": "? `\\u20B9${Number(stats.total_funds_inr).toLocaleString('en-IN')} + $${Number(stats.total_funds_usd).toLocaleString('en-IN')}`"
+    },
+    {
+      "file": "frontend\\src\\app\\ledger\\page.tsx",
+      "line_no": 332,
+      "line": "? `\\u20B9${Number(stats.total_funds_inr).toLocaleString('en-IN')}`"
+    },
+    {
+      "file": "frontend\\src\\app\\ledger\\page.tsx",
+      "line_no": 334,
+      "line": "? `$${Number(stats.total_funds_usd).toLocaleString('en-IN')}`"
+    },
+    {
+      "file": "frontend\\src\\app\\ledger\\page.tsx",
+      "line_no": 336,
+      "line": "? `\\u20B9${Number(stats.total_funds_all).toLocaleString('en-IN')}`"
+    },
+    {
+      "file": "frontend\\src\\app\\ledger\\page.tsx",
+      "line_no": 340,
+      "line": "<span className=\"block text-[9px] text-slate-400 font-medium\">Includes historical USD records</span>"
+    },
+    {
+      "file": "frontend\\src\\app\\ledger\\page.tsx",
+      "line_no": 564,
+      "line": "const currencyVal = payload.currency || 'INR';"
+    },
+    {
+      "file": "frontend\\src\\app\\ledger\\page.tsx",
+      "line_no": 595,
+      "line": "href={`/ngo/${ngoIdVal}`}"
+    },
+    {
+      "file": "frontend\\src\\app\\ledger\\page.tsx",
+      "line_no": 611,
+      "line": "{isDonation ? formatCurrency(amountVal, currencyVal) : 'System Event'}"
+    },
+    {
+      "file": "frontend\\src\\app\\ledger\\page.tsx",
+      "line_no": 759,
+      "line": "? formatCurrency("
+    },
+    {
+      "file": "frontend\\src\\app\\ledger\\page.tsx",
+      "line_no": 761,
+      "line": "modalPayload.currency || 'INR'"
+    },
+    {
+      "file": "frontend\\src\\app\\ledger\\page.tsx",
+      "line_no": 765,
+      "line": "{modalPayload.currency && ("
+    },
+    {
+      "file": "frontend\\src\\app\\ledger\\page.tsx",
+      "line_no": 766,
+      "line": "<p className=\"text-[10px] text-slate-400 font-mono\">{modalPayload.currency}</p>"
+    },
+    {
+      "file": "frontend\\src\\app\\ngo\\dashboard\\page.tsx",
+      "line_no": 289,
+      "line": "<span className={`px-3 py-0.5 rounded-full text-xs font-mono font-bold uppercase border ${"
+    },
+    {
+      "file": "frontend\\src\\app\\ngo\\dashboard\\page.tsx",
+      "line_no": 416,
+      "line": "<label className=\"block text-xs font-semibold text-slate-300 mb-1\">Total Reported Expenses ($)</label>"
+    },
+    {
+      "file": "frontend\\src\\app\\ngo\\dashboard\\page.tsx",
+      "line_no": 428,
+      "line": "<label className=\"block text-xs font-semibold text-slate-300 mb-1\">Total Donations Received ($)</label>"
+    },
+    {
+      "file": "frontend\\src\\app\\ngo\\[id]\\page.tsx",
+      "line_no": 45,
+      "line": "const data = await apiFetch(`/api/public/ngos/${ngoId}`);"
+    },
+    {
+      "file": "frontend\\src\\app\\ngo\\[id]\\page.tsx",
+      "line_no": 74,
+      "line": "currency: 'USD',"
+    },
+    {
+      "file": "frontend\\src\\app\\ngo\\[id]\\page.tsx",
+      "line_no": 222,
+      "line": "<span className=\"font-bold text-emerald-400\">${ngo.total_donations_received.toLocaleString()}</span>"
+    },
+    {
+      "file": "frontend\\src\\app\\ngo\\[id]\\page.tsx",
+      "line_no": 227,
+      "line": "<span className=\"font-bold text-slate-200\">${ngo.total_expenses.toLocaleString()}</span>"
+    },
+    {
+      "file": "frontend\\src\\app\\ngo\\[id]\\page.tsx",
+      "line_no": 257,
+      "line": "Your donation of <span className=\"font-bold text-emerald-400\">${donationSuccess.amount} {donationSuccess.currency}</span> has been logged on the SHA-256 blockchain ledger."
+    },
+    {
+      "file": "frontend\\src\\app\\ngo\\[id]\\page.tsx",
+      "line_no": 292,
+      "line": "<label className=\"block text-xs font-semibold text-slate-300 mb-2\">Select Donation Amount (USD)</label>"
+    },
+    {
+      "file": "frontend\\src\\app\\ngo\\[id]\\page.tsx",
+      "line_no": 302,
+      "line": "className={`rounded-xl py-2.5 text-xs font-bold transition-all ${"
+    },
+    {
+      "file": "frontend\\src\\app\\ngo\\[id]\\page.tsx",
+      "line_no": 308,
+      "line": "${amt}"
+    },
+    {
+      "file": "frontend\\src\\app\\ngo\\[id]\\page.tsx",
+      "line_no": 315,
+      "line": "placeholder=\"Or enter custom amount ($)...\""
+    },
+    {
+      "file": "frontend\\src\\app\\register\\page.tsx",
+      "line_no": 80,
+      "line": "className={`flex flex-col items-center justify-center rounded-xl p-2.5 border text-xs font-bold transition-all ${"
+    },
+    {
+      "file": "frontend\\src\\app\\register\\page.tsx",
+      "line_no": 93,
+      "line": "className={`flex flex-col items-center justify-center rounded-xl p-2.5 border text-xs font-bold transition-all ${"
+    },
+    {
+      "file": "frontend\\src\\app\\register\\page.tsx",
+      "line_no": 106,
+      "line": "className={`flex flex-col items-center justify-center rounded-xl p-2.5 border text-xs font-bold transition-all ${"
+    },
+    {
+      "file": "frontend\\src\\app\\verify-otp\\page.tsx",
+      "line_no": 143,
+      "line": "<RefreshCw className={`h-3 w-3 ${resendLoading ? 'animate-spin' : ''}`} />"
+    },
+    {
+      "file": "frontend\\src\\components\\AiChatbotWindow.tsx",
+      "line_no": 102,
+      "line": "className={`flex ${msg.sender === 'user' ? 'justify-end' : 'justify-start'}`}"
+    },
+    {
+      "file": "frontend\\src\\components\\AiChatbotWindow.tsx",
+      "line_no": 104,
+      "line": "<div className={`max-w-[85%] rounded-2xl p-3 ${"
+    },
+    {
+      "file": "frontend\\src\\components\\AiChatbotWindow.tsx",
+      "line_no": 110,
+      "line": "<span className={`block text-[9px] mt-1 ${msg.sender === 'user' ? 'text-blue-100' : 'text-slate-400'} text-right`}>"
+    },
+    {
+      "file": "frontend\\src\\components\\Navbar.tsx",
+      "line_no": 86,
+      "line": "<span className={`text-[10px] px-2 py-0.5 rounded-full font-mono uppercase font-bold ${"
+    },
+    {
+      "file": "frontend\\src\\context\\AuthContext.tsx",
+      "line_no": 68,
+      "line": "headers['Authorization'] = `Bearer ${token}`;"
+    },
+    {
+      "file": "frontend\\src\\context\\AuthContext.tsx",
+      "line_no": 77,
+      "line": "const response = await fetch(`${baseUrl}${endpoint}`, {"
+    },
+    {
+      "file": "frontend\\src\\context\\AuthContext.tsx",
+      "line_no": 84,
+      "line": "throw new Error(errorData.detail || `HTTP Error ${response.status}`);"
+    },
+    {
+      "file": "frontend\\src\\context\\AuthContext.tsx",
+      "line_no": 90,
+      "line": "throw new Error(`Unable to connect to the server (${baseUrl}). Please ensure the backend is running.`);"
+    }
+  ]
+}
